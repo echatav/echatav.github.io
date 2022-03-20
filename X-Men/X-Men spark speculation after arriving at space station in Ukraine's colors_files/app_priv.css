@@ -1,0 +1,208 @@
+.font_light{font-family:'lato_l_font';}
+.topm1rem{margin-top: 1rem;}
+.topm3rem{margin-top: 3rem;}
+.bottom1rem{margin-bottom: 1rem;}
+.top_botm1rem{margin-top: 1rem; margin-bottom: 1rem;}
+.top_botm30px{margin-top: 30px; margin-bottom: 30px;}
+.logo_gn{margin: 0.5rem 0.5rem 0.5rem 0;}
+.top-bar a {text-transform: uppercase; font-weight: bold;}
+.icon_weather{padding-top: 1rem;}
+.logo_gn_footer{height: 100px; padding-top: 1rem; padding-bottom: 1rem;}
+.post-meta{color: #8a8a8a; font-size: 0.875rem;}
+.social_icon{font-size: 1.3rem}
+.border_t_1px{border-top: 1px solid #CACACA} /*$medium-gray*/
+.small_font{font-size: 70%;}
+.padd_top_7px{padding-top: 7px;}
+.share-buttons{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: end;
+  align-content: center;
+}
+
+.share-buttons .twitter-share-button{
+  margin-top: 4px;
+}
+
+.share-buttons-detail
+{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1.5rem;
+  justify-items: start;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.share-buttons-detail .date{
+  text-align: left;
+}
+.share-buttons-detail .fb-share-button{margin-top: -4px;}
+
+.title-bar{margin-top: 1rem;}
+.news-img{width: 100%;}
+
+.padding_r_0{padding-right: 0px !important;}
+
+.fav-img {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.fav-img-down {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+@media print, screen and (max-width: 640px) {
+  .fav-img {height: 220px;}
+  .fav-img-down {height: 220px;}
+}
+.full-width{width: 100%;}
+
+.menu-right-links{
+  text-align: center;
+}
+.menu-right-links span{
+  display: block;
+  font-size: 11px;
+  padding-top: 0.5rem;
+}
+
+.card p {
+  margin-top: 0.5rem;
+}
+
+.img_option{
+  width: 120px;
+}
+
+@font-face {
+  font-family: 'lato_l_font';
+  font-display: swap;
+  src: url('/font/lato/LatoLatin-Light.woff2') format('woff2'),
+       url('/font/lato/LatoLatin-Light.woff') format('woff'),
+       url('/font/lato/LatoLatin-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lato_r_font';
+  src: url('/font/lato/LatoLatin-Regular.woff2') format('woff2'),
+       url('/font/lato/LatoLatin-Regular.woff') format('woff'),
+       url('/font/lato/LatoLatin-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+
+/* Fontello */
+@font-face {
+  font-family: 'fontello';
+  font-display: swap;
+  src: url('/fontello/font/fontello.eot?2072663');
+  src: url('/fontello/font/fontello.eot?2072663#iefix') format('embedded-opentype'),
+       url('/fontello/font/fontello.woff2?2072663') format('woff2'),
+       url('/fontello/font/fontello.woff?2072663') format('woff'),
+       url('/fontello/font/fontello.ttf?2072663') format('truetype'),
+       url('/fontello/font/fontello.svg?2072663#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?2072663#fontello') format('svg');
+  }
+}
+*/
+ 
+.fontello-icon{
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+
+ 
+.icon-down-open:before { content: '\e800'; } /* '' */
+.icon-left-open:before { content: '\e801'; } /* '' */
+.icon-right-open:before { content: '\e802'; } /* '' */
+.icon-up-open:before { content: '\e803'; } /* '' */
+.icon-mail:before { content: '\e804'; } /* '' */
+.icon-heart-empty:before { content: '\e805'; } /* '' */
+.icon-heart:before { content: '\e806'; } /* '' */
+.icon-star:before { content: '\e807'; } /* '' */
+.icon-star-empty:before { content: '\e808'; } /* '' */
+.icon-clock:before { content: '\e809'; } /* '' */
+.icon-phone:before { content: '\e80a'; } /* '' */
+.icon-print:before { content: '\e80b'; } /* '' */
+.icon-home:before { content: '\e80c'; } /* '' */
+.icon-cog:before { content: '\e80d'; } /* '' */
+.icon-basket:before { content: '\e80e'; } /* '' */
+.icon-play:before { content: '\e80f'; } /* '' */
+.icon-ccw:before { content: '\e810'; } /* '' */
+.icon-wrench:before { content: '\e811'; } /* '' */
+.icon-trash-empty:before { content: '\e812'; } /* '' */
+.icon-help-circled:before { content: '\e813'; } /* '' */
+.icon-info-circled:before { content: '\e814'; } /* '' */
+.icon-clock-1:before { content: '\e815'; } /* '' */
+.icon-calendar:before { content: '\e816'; } /* '' */
+.icon-calendar-1:before { content: '\e817'; } /* '' */
+.icon-picture:before { content: '\e818'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-magic:before { content: '\f0d0'; } /* '' */
+.icon-gplus-squared:before { content: '\f0d4'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-lightbulb:before { content: '\f0eb'; } /* '' */
+.icon-help:before { content: '\f128'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-file-pdf:before { content: '\f1c1'; } /* '' */
+.icon-facebook-official:before { content: '\f230'; } /* '' */
+.icon-shopping-basket:before { content: '\f291'; } /* '' */
+.icon-twitter-squared:before { content: '\f304'; } /* '' */
+.icon-facebook-squared:before { content: '\f308'; } /* '' */
+.icon-linkedin-squared:before { content: '\f30c'; } /* '' */
+/* Fontello kraj */
